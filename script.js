@@ -93,7 +93,6 @@ do {
 /*
 8. Escribir un programa que lea números enteros hasta teclear 0 (cero). Al finalizar el
 programa se debe mostrar el máximo número ingresado, el mínimo, y el promedio de
- */
 var n = 0; cont = 0, max = 0, suma = 0, condition = 0;
 n = parseInt(prompt("Ingrese un numero entero o Cero '0' para Salir "));
 var min = n;
@@ -115,3 +114,62 @@ console.log("minimo = " + min);
 console.log("maximo = " + max);
 console.log("suma = " + suma);
 console.log("promedio = " + suma / (cont));
+*/
+
+/*
+9. Realizar un programa que pida una frase y el programa deberá mostrar la frase con un
+espacio entre cada letra. La frase se mostrara así: H o l a. Nota: recordar el
+funcionamiento de la función Substring(). 
+var frase = prompt("Escriba una frase");
+let nueva = "";
+let arr = frase.split('');
+for (let i = 0; i < frase.length; i++) {
+    nueva = nueva + frase[i] + " ";
+}
+console.log(nueva)
+*/
+
+/*
+10. Escribir una función flecha que reciba una palabra y la devuelva al revés.  
+*/
+
+var frase = prompt("Escriba una palabra");
+long = frase.length;
+frase.forEach(letra => {
+    
+});
+let func = (palabra) => a+blur;
+
+/*
+11. Escribir una función que reciba un String y devuelva la palabra más larga.  
+String Ejemplo: “Guia de JavaScript”
+Resultado esperado : “JavaScript” 
+12. Escribir una función flecha de JavaScript que reciba un argumento y retorne el tipo de
+dato.  
+13. Crear un objeto persona, con las propiedades nombre, edad, sexo ('H' hombre, 'M' mujer,
+'O' otro), peso y altura. A continuación, muestre las propiedades del objeto JavaScript.  
+14. Crear un objeto libro que contenga las siguientes propiedades: ISBN, Título, Autor,
+Número de páginas. Crear un método para cargar un libro pidiendo los datos al usuario 
+y luego informar mediante otro método el número de ISBN, el título, el autor del libro y el
+numero de páginas.  
+15. Escribe un programa JavaScript para calcular el área y el perímetro de un objeto Círculo
+con la propiedad radio. Nota: Cree dos métodos para calcular el área y el perímetro. El
+radio del círculo lo proporcionará el usuario.  
+16. Realizar un programa que rellene dos vectores al mismo tiempo, con 5 valores aleatorios
+y los muestre por pantalla.  
+17. Realizar un programa que elimine los dos últimos elementos de un array. Mostrar el
+resultado 
+18. A partir del siguiente array: var valores = [true, 5, false, "hola", "adios", 2]: 
+a) Determinar cual de los dos elementos de texto es mayor 
+b) Utilizando exclusivamente los dos valores booleanos del array, determinar los
+operadores necesarios para obtener un resultado true y otro resultado false 
+c) Determinar el resultado de las cinco operaciones matemáticas realizadas con los
+dos elementos numéricos 
+19. Realizar un programa en Java donde se creen dos arreglos: el primero será un arreglo A
+de 50 números reales, y el segundo B, un arreglo de 20 números, también reales. El
+programa deberá inicializar el arreglo A con números aleatorios y mostrarlo por pantalla.
+Luego, el arreglo A se debe ordenar de menor a mayor y copiar los primeros 10 números
+ordenados al arreglo B de 20 elementos, y rellenar los 10 últimos elementos con el valor
+0.5. Mostrar los dos arreglos resultantes: el ordenado de 50 elementos y el combinado
+de 20. 
+*/
