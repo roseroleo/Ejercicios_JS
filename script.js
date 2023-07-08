@@ -131,23 +131,48 @@ console.log(nueva)
 
 /*
 10. Escribir una función flecha que reciba una palabra y la devuelva al revés.  
-*/
-
+function invertir(frase) {
+    let esarf = "";
+    for (let i = frase.length - 1; i >= 0; i--) {
+        esarf += frase[i];
+    }
+    return esarf;
+}
 var frase = prompt("Escriba una palabra");
-long = frase.length;
-frase.forEach(letra => {
-    
-});
-let func = (palabra) => a+blur;
+console.log(invertir(frase))
+*/
 
 /*
 11. Escribir una función que reciba un String y devuelva la palabra más larga.  
 String Ejemplo: “Guia de JavaScript”
 Resultado esperado : “JavaScript” 
+function masLarga(frase) {
+    let larga = "";
+    const palabras = frase.split(" ");
+    for (let i = 0; i < palabras.length-1; i++) {
+        if (palabras[i].length > larga.length) {
+            larga = palabras[i];
+        }
+    }
+    return larga;
+}
+var frase = prompt("Escriba una frase");
+console.log(masLarga(frase));
+*/
+
+/*
 12. Escribir una función flecha de JavaScript que reciba un argumento y retorne el tipo de
 dato.  
+*/
+var dato = prompt("Escriba un dato");
+let tipo = (dato) => console.log(typeof dato);
+tipo(dato);
+
+/*
 13. Crear un objeto persona, con las propiedades nombre, edad, sexo ('H' hombre, 'M' mujer,
 'O' otro), peso y altura. A continuación, muestre las propiedades del objeto JavaScript.  
+
+
 14. Crear un objeto libro que contenga las siguientes propiedades: ISBN, Título, Autor,
 Número de páginas. Crear un método para cargar un libro pidiendo los datos al usuario 
 y luego informar mediante otro método el número de ISBN, el título, el autor del libro y el
