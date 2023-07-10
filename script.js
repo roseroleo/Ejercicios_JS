@@ -163,33 +163,102 @@ console.log(masLarga(frase));
 /*
 12. Escribir una función flecha de JavaScript que reciba un argumento y retorne el tipo de
 dato.  
-*/
 var dato = prompt("Escriba un dato");
 let tipo = (dato) => console.log(typeof dato);
 tipo(dato);
+*/
 
 /*
 13. Crear un objeto persona, con las propiedades nombre, edad, sexo ('H' hombre, 'M' mujer,
 'O' otro), peso y altura. A continuación, muestre las propiedades del objeto JavaScript.  
+var persona = {
+    nombre : "lero",
+    edad : 51,
+    sexo : "H",
+    peso : 88,
+    altura : 1.71,
+}
+console.log(persona);
+*/
 
-
+/*
 14. Crear un objeto libro que contenga las siguientes propiedades: ISBN, Título, Autor,
 Número de páginas. Crear un método para cargar un libro pidiendo los datos al usuario 
 y luego informar mediante otro método el número de ISBN, el título, el autor del libro y el
-numero de páginas.  
+numero de páginas. 
+var libro = {
+    isbn : null, 
+    titulo : "", 
+    autor : "",
+    numpag : null,
+}
+
+function libroNuevo() {
+    libro.titulo = prompt("Titulo ")
+    libro.autor = prompt("Autor ");
+    libro.isbn = prompt("ISBN ");
+    libro.numpag = prompt("Numero de paginas ");
+}
+
+function mostrarLibro(libro) {
+    console.log(libro);
+}
+libroNuevo();
+mostrarLibro(libro);
+*/
+
+/*
 15. Escribe un programa JavaScript para calcular el área y el perímetro de un objeto Círculo
 con la propiedad radio. Nota: Cree dos métodos para calcular el área y el perímetro. El
-radio del círculo lo proporcionará el usuario.  
+radio del círculo lo proporcionará el usuario. 
+function area(radio) {
+    area = Math.PI*Math.pow(radio, 2);
+    return area;
+}
+function perimetro(radio) {
+    perimetro = Math.PI*2*radio;
+    return perimetro;
+}
+var radio = parseInt(prompt("Radio "));
+console.log(area(radio));
+console.log(perimetro(radio));
+*/
+
+/*
 16. Realizar un programa que rellene dos vectores al mismo tiempo, con 5 valores aleatorios
-y los muestre por pantalla.  
+y los muestre por pantalla. 
+const v1 = [];
+const v2 = [];
+for (let i = 0; i < 5; i++) {
+    v1[i] = parseInt(Math.random()*10);
+    v2[i] = parseInt(Math.random()*10);
+}
+console.log("vector 1 = "+JSON.stringify(v1));
+console.log("Vector 2 = "+JSON.stringify(v2));
+*/
+
+/*
 17. Realizar un programa que elimine los dos últimos elementos de un array. Mostrar el
 resultado 
+const arr = [1,2,3,4,5];
+console.log(arr);
+arr.pop();
+arr.pop();
+console.log(arr);
+*/
+
+/*
 18. A partir del siguiente array: var valores = [true, 5, false, "hola", "adios", 2]: 
 a) Determinar cual de los dos elementos de texto es mayor 
 b) Utilizando exclusivamente los dos valores booleanos del array, determinar los
 operadores necesarios para obtener un resultado true y otro resultado false 
 c) Determinar el resultado de las cinco operaciones matemáticas realizadas con los
 dos elementos numéricos 
+*/
+var valores = [true, 5, false, "hola", "adios", 2];
+
+
+/*
 19. Realizar un programa en Java donde se creen dos arreglos: el primero será un arreglo A
 de 50 números reales, y el segundo B, un arreglo de 20 números, también reales. El
 programa deberá inicializar el arreglo A con números aleatorios y mostrarlo por pantalla.
