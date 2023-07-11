@@ -256,6 +256,24 @@ c) Determinar el resultado de las cinco operaciones matemáticas realizadas con 
 dos elementos numéricos 
 */
 var valores = [true, 5, false, "hola", "adios", 2];
+var elementoMayor = "";
+var nuevo = [];
+valores.forEach(elemento => {
+    if (typeof elemento === "string") {
+        if (elemento.length > elementoMayor.length) {
+            elementoMayor = elemento;
+        }
+    }
+});
+for (let e of valores) {
+    console.log(e)
+    if (e === true || e === false) {
+        nuevo.push(e);
+    }
+}
+console.log("elemento mayor = " + elementoMayor);
+console.log(nuevo)
+console.log(JSON.stringify(nuevo));
 
 
 /*
@@ -265,5 +283,31 @@ programa deberá inicializar el arreglo A con números aleatorios y mostrarlo po
 Luego, el arreglo A se debe ordenar de menor a mayor y copiar los primeros 10 números
 ordenados al arreglo B de 20 elementos, y rellenar los 10 últimos elementos con el valor
 0.5. Mostrar los dos arreglos resultantes: el ordenado de 50 elementos y el combinado
-de 20. 
+de 20.
+
+20. Realizar un programa que obtenga la siguiente matriz [[3], [6], [9], [12], [15]] y devuelve y
+muestre el siguiente array [6, 9, 12, 15, 18].  
+21. Escribir un programa para obtener un array de las propiedades de un objeto Persona.
+Las propiedades son nombre, edad, sexo ('H' hombre, 'M' mujer, 'O' otro), peso y altura.  
+22. Escribir un programa de JavaScript que al clickear un botón muestre un mensaje a
+elección.  
+23. Resalte todas las palabras de más de 8 caracteres en el texto del párrafo (con un fondo
+amarillo, por ejemplo)  
+ 
+24. Escribir un programa de JavaScript que a través de un formulario calcule el radio de un 
+circulo y lo muestre en el HTML. 
+25. Escriba una función de JavaScript para obtener los valores de Nombre y Apellido del
+siguiente formulario.  
+<!DOCTYPE html>
+<html><head>
+<meta charset=utf-8 />
+<title>Obtener nombre y apellido de form </title>
+</head><body>
+<form id="form1" onsubmit="getFormValores()">
+Nombre: <input type="text" name="nombre" value="David"><br>
+Apellido: <input type="text" name="apellido" value="Beckham"><br>
+<input type="submit" value="Submit"> 
+</form>
+</body>
+</html> 
 */
